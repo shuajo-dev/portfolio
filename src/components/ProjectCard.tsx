@@ -10,69 +10,64 @@ type ProjectCardProps = {
 
 function ProjectCard({ title, description, tags, githubUrl, liveUrl, featured, image }: ProjectCardProps) {
   return (
-    <div
-      className={`group rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
+    <article
+      className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 ${
         featured
           ? 'md:col-span-2 bg-deep-green text-cream shadow-xl hover:shadow-2xl'
           : 'bg-cream text-charcoal border border-stone hover:border-deep-green hover:shadow-lg'
       }`}
     >
-      <div className="flex items-start justify-between gap-6">
-        <div className="flex-1">
-            
-          {image && (
-            <img
-              src={image}
-              alt={`${title} logo`}
-              className="w-14 h-14 rounded-xl object-cover mb-5 ring-1 ring-black/10"
-            />
-          )}
+      {image && (
+        <div className="aspect-video overflow-hidden">
+          <img
+            src={image}
+            alt={`${title} preview`}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
+
+      <div className="p-8">
+        <div className="flex items-start justify-between gap-6">
           <h3 className="font-heading text-3xl font-bold tracking-tight">
             {title}
           </h3>
-          <p className={`font-body mt-3 leading-relaxed ${featured ? 'text-cream/80' : 'text-charcoal/80'}`}>
-            {description}
-          </p>
+          {featured && (
+            <span className="font-body text-[10px] uppercase tracking-[0.2em] text-cream/60 border border-cream/30 rounded-full px-3 py-1 shrink-0">
+              Featured
+            </span>
+          )}
         </div>
-      </div>
-       <div className="mt-6">
-        <p className="font-body text-xs uppercase tracking-wider opacity-50 mb-2">
-            Tech Stack
+        <p className={`font-body mt-3 leading-relaxed ${featured ? 'text-cream/80' : 'text-charcoal/80'}`}>
+          {description}
         </p>
-        <div className="flex flex-wrap items-center">
+
+        <div className="mt-6">
+          <p className="font-body text-xs uppercase tracking-wider opacity-50 mb-2">
+            Tech Stack
+          </p>
+          <div className="flex flex-wrap items-center">
             {tags.map((tag, i) => (
-            <span
-                key={tag}
-                className="font-body text-xs uppercase tracking-wider text-sage flex items-center"
-            >
+              <span key={tag} className="font-body text-xs uppercase tracking-wider text-sage flex items-center">
                 {tag}
                 {i < tags.length - 1 && <span className="opacity-40 mx-3">·</span>}
-            </span>
+              </span>
             ))}
-        </div>
+          </div>
         </div>
 
-      <div className="flex gap-6 mt-6 pt-6 border-t border-current/10">
-        <a
-          href={githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded"
-        >
-          View Code →
-        </a>
-        {liveUrl && (
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded"
-          >
-            Live Demo →
+        <div className="flex gap-6 mt-6 pt-6 border-t border-current/10">
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
+            View Code →
           </a>
-        )}
+          {liveUrl && (
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded">
+              Live Demo →
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </article>
   )
 }
 
