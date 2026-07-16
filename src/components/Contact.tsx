@@ -1,16 +1,16 @@
 function Contact() {
   return (
     <section className="py-20 px-8 bg-deep-green text-cream text-center">
-      <h2 className="font-heading text-4xl font-bold mb-4">
-        Get In Touch
-      </h2>
-      <p className="font-body text-stone mb-8">
-        Always Open to opportunities
-      </p>
+        <p className="font-body text-xs uppercase tracking-[0.2em] text-stone mb-4">
+        Always Open to Opportunities
+        </p>
+        <h2 className="font-heading text-4xl font-bold mb-8">
+        Say Hello
+        </h2>
       <div className="flex justify-center gap-8 font-body">
         <a
           href="mailto:joshua.cabatan@proton.me"
-          className="underline hover:text-sage transition-colors"
+          className="underline hover:text-sage transition-colors focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-deep-green rounded"
         >
           joshua.cabatan@proton.me
         </a>
@@ -18,7 +18,7 @@ function Contact() {
           href="https://github.com/shuajo-dev"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-sage transition-colors"
+          className="underline hover:text-sage transition-colors focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-deep-green rounded"
         >
           GitHub
         </a>
@@ -26,7 +26,7 @@ function Contact() {
           href="https://www.linkedin.com/in/shuajo/"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-sage transition-colors"
+          className="underline hover:text-sage transition-colors focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-deep-green rounded"
         >
           LinkedIn
         </a>

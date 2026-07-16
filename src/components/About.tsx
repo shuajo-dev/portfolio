@@ -16,10 +16,21 @@ function About() {
         internal tools, and web systems across multiple domains — from education to
         healthcare to event management.
       </p>
-      <ul className="space-y-4">
-        {highlights.map((point) => (
-          <li key={point} className="font-body text-charcoal border-l-2 border-sage pl-4">
-            {point}
+      <p className="font-body text-xs uppercase tracking-[0.2em] text-sage text-center mb-6">
+        Recent Highlights
+        </p>
+      <ul>
+        {highlights.map((point, i) => (
+          <li
+            key={point}
+            className="flex gap-6 py-5 border-b border-stone/40 last:border-b-0"
+          >
+            <span className="font-heading text-lg font-bold text-sage shrink-0">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <p className="font-body text-charcoal leading-relaxed">
+              {point}
+            </p>
           </li>
         ))}
       </ul>

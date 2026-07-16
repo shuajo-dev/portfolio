@@ -19,6 +19,7 @@ function ProjectCard({ title, description, tags, githubUrl, liveUrl, featured, i
     >
       <div className="flex items-start justify-between gap-6">
         <div className="flex-1">
+            
           {image && (
             <img
               src={image}
@@ -56,7 +57,7 @@ function ProjectCard({ title, description, tags, githubUrl, liveUrl, featured, i
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-body text-sm font-medium underline-offset-4 hover:underline"
+          className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded"
         >
           View Code →
         </a>
@@ -65,7 +66,7 @@ function ProjectCard({ title, description, tags, githubUrl, liveUrl, featured, i
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-sm font-medium underline-offset-4 hover:underline"
+            className="font-body text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sage focus:ring-offset-2 rounded"
           >
             Live Demo →
           </a>

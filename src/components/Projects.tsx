@@ -4,7 +4,10 @@ import pacerLogo from '../assets/projects/pacer.jpg'
 function Projects(){
     return(
         <section className="py-20 px-8 bg-stone/20">
-            <h2 className="font-heading text-4xl font-bold text-deep-green text-center mb-3">
+            <p className="font-body text-xs uppercase tracking-[0.2em] text-sage mb-3 text-center">
+            Selected Work
+            </p>
+            <h2 className="font-heading text-4xl font-bold text-deep-green text-center">
             Personal Projects
             </h2>
             <p className="font-body text-charcoal/60 text-center mb-12">
