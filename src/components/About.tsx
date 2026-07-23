@@ -7,7 +7,7 @@ const highlights = [
 
 function About() {
   return (
-    <section className="py-20 px-8 max-w-4xl mx-auto">
+    <section className="py-20 px-8 max-w-4xl mx-auto" id="about">
       <h2 className="font-heading text-4xl font-bold text-deep-green text-center mb-8">
         About
       </h2>

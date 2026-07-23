@@ -4,12 +4,14 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import EasterEgg from './components/EasterEgg'
+import Navbar from './components/Navbar'
 
 function App() {
   
 
   return (
      <div className="bg-cream text-charcoal min-h-screen">
+        <Navbar />
         <Hero />
         <Projects />
         <About />

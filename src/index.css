@@ -2,13 +2,23 @@
 
 
 @theme {
-  --color-deep-green: #0d3b2e;
+  --color-deep-green: #0D3B2E;
   --color-sage: #6f8a7f;
   --color-stone: #bfc7c2;
-  --color-cream: #e9e6df;
+  --color-cream: #F7EDE2;
   --color-charcoal: #3c3a36;
 
   --font-heading: "Jost", sans-serif;
   --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
