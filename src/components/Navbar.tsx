@@ -12,7 +12,7 @@ function Navbar(){
        <nav className="sticky top-0 z-40 bg-cream/80 backdrop-blur-sm border-b border-stone/40">
             <div className="max-w-6xl mx-auto px-8 flex items-center justify-between h-16">
                 <a href="#" className="flex items-center gap-2">
-                    <img src={logo} alt="Logo" className="h-8 w-8"/>
+                    <img src={logo} alt="Logo" className="h-12 w-12"/>
                 </a>
 
                 <div className="flex gap-8 font-body text-sm">

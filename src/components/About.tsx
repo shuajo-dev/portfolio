@@ -1,9 +1,9 @@
 const highlights = [
-  "Built a golf course booking and membership management system with a companion Filament CMS and PayMongo payment integration, structured as a monorepo and deployed as two independent apps on Cloudways.",
-  "Built a production school distribution system serving 170k+ student records across 52 locations in one month.",
-  "Architected multi-day event workflows supporting 24+ hour events with automatic overnight shift calculations.",
-  "Implemented 2FA with SMS OTP for a health patient management system handling secure result viewing.",
-  "Managed production deployments and infrastructure across AWS, DigitalOcean, and Cloudways.",
+  "Built a golf course booking and membership management system with a Filament CMS and PayMongo payment integration, structured as a monorepo and deployed as two independent apps on Cloudways.",
+  "Engineered a large-scale distribution and claim-tracking system serving 170k+ beneficiary records across 52 locations, with a live dashboard, a public claim-status portal, and real-time deduplication logic for data finalized only at go-live.",
+  "Led development of a volunteer management platform with scoped event access and reporting, then took over solo ownership of its second phase, adding multi-day scheduling, modernizing public pages, and resolving inherited technical debt.",
+  "Took over solo ownership of a health patient management system's later phases, replacing synchronous bulk PDF generation with queued background jobs and fixing N+1 query issues, plus adding 2FA/SMS OTP-secured patient portals.",
+
   
 ]
 
@@ -21,8 +21,7 @@ function About() {
       </h2>
       <p className="font-body text-charcoal text-lg mb-10 text-center">
         Software Engineer with 7 years designing and building Laravel applications,
-        internal tools, and web systems across multiple domains — from education to
-        healthcare to event management.
+        internal tools, and web systems across multiple domains.
       </p>
       <p className="font-body text-xs uppercase tracking-[0.2em] text-sage text-center mb-6">
         Recent Highlights
@@ -49,7 +48,7 @@ function About() {
             <p className="font-body text-xs uppercase tracking-[0.2em] text-sage mb-2">
               {group.label}
             </p>
-            <p className="font-body text-charcoal">{group.items}</p>
+            <p className="font-body text-charcoal text-justify">{group.items}</p>
           </div>
         ))}
       </div>
