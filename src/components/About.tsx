@@ -1,8 +1,16 @@
 const highlights = [
+  "Built a golf course booking and membership management system with a companion Filament CMS and PayMongo payment integration, structured as a monorepo and deployed as two independent apps on Cloudways.",
   "Built a production school distribution system serving 170k+ student records across 52 locations in one month.",
   "Architected multi-day event workflows supporting 24+ hour events with automatic overnight shift calculations.",
   "Implemented 2FA with SMS OTP for a health patient management system handling secure result viewing.",
   "Managed production deployments and infrastructure across AWS, DigitalOcean, and Cloudways.",
+  
+]
+
+const stack = [
+  { label: "Languages", items: "PHP, TypeScript, JavaScript, CSS" },
+  { label: "Frameworks", items: "Laravel, React, Tailwind" },
+  { label: "Tools", items: "AWS, DigitalOcean, Cloudways, Docker, GitHub, Postman" },
 ]
 
 function About() {
@@ -34,6 +42,17 @@ function About() {
           </li>
         ))}
       </ul>
+
+      <div className="grid md:grid-cols-3 gap-8 mt-12 pt-10 border-t border-stone/40">
+        {stack.map((group) => (
+          <div key={group.label}>
+            <p className="font-body text-xs uppercase tracking-[0.2em] text-sage mb-2">
+              {group.label}
+            </p>
+            <p className="font-body text-charcoal">{group.items}</p>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
