@@ -11,7 +11,7 @@ function Projects(){
             Personal Projects
             </h2>
             <p className="font-body text-charcoal/60 text-center mb-12">
-            What I build when nobody's asking me to.
+            What I build when nobody's asking me to. The rest lives in private repos.
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 <ProjectCard

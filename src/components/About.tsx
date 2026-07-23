@@ -53,6 +53,10 @@ function About() {
           </div>
         ))}
       </div>
+
+      <p className="font-body text-sm text-charcoal/60 text-center mt-12 italic">
+       Fun fact: when I'm not shipping code, I'm chasing a new PR on a run, riding motorcycles, or mixing fountain pen inks.
+      </p>
     </section>
   )
 }
