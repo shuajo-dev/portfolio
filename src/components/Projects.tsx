@@ -3,7 +3,7 @@ import pacerLogo from '../assets/projects/pacer.jpg'
 
 function Projects(){
     return(
-        <section className="py-20 px-8 bg-stone/20">
+        <section className="py-20 px-8 bg-stone/20" id="projects">
             <p className="font-body text-xs uppercase tracking-[0.2em] text-sage mb-3 text-center">
             Selected Work
             </p>
