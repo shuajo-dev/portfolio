@@ -15,7 +15,7 @@ function Navbar(){
                     <img src={logo} alt="Logo" className="h-12 w-12"/>
                 </a>
 
-                <div className="flex gap-8 font-body text-sm">
+                <div className="flex items-center gap-8 font-body text-sm">
                     {links.map((link) => (
                         <a
                             key={link.href}
@@ -26,7 +26,17 @@ function Navbar(){
                             {link.label}
                         </a>
                     ))}
+                        <a
+                        href="https://drive.proton.me/urls/0J6JNYAM2W#o4pBAolgod0j"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium border border-deep-green text-deep-green px-4 py-1.5 rounded-full hover:bg-deep-green hover:text-cream transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deep-green focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                        >
+                        Download CV
+                        </a>
+                    
                 </div>
+               
             </div>
         </nav>
     )
