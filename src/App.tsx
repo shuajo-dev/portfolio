@@ -5,6 +5,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import EasterEgg from './components/EasterEgg'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Contact />
         <EasterEgg />
+        <Footer />
     </div>
   )
 }
